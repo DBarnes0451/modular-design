@@ -1,0 +1,259 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,body {
+  margin:0;
+  padding:0;
+}
+
+.vertical-nav-container{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5em;
+    width: 200px;
+    list-style-type: none;
+}
+   
+.vertical-nav-li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.4em 1.25em;
+    color: white;    
+}
+
+.vertical-nav-li a:hover{
+    background-color: gray;
+    color: black;
+    border-radius: 0.5em;
+}
+
+.horizontal-nav-container {
+  display: flex;
+  background-color: black;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.25em;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  border-radius: 0.5em;
+}
+
+@media screen and (max-width:750px){
+  .horizontal-nav-container{
+    font-size: 1em;
+  }
+}
+
+.horizontal-nav-li a{
+  margin: 1em;
+  padding:0 1.4em 0 1.4em;
+  text-decoration: none;
+  color: white; 
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.horizontal-nav-li a:hover{
+  background-color: gray;
+  color: black;
+}
+
+.hero-block-container{
+  display: flex;
+  position: relative;
+  padding-top: 1%;
+}
+
+@media screen and (max-width:750px){
+  .hero-block-container{
+  padding-top: 2%;
+  }
+}
+
+.hero-block-text{
+  max-width: 40ch;
+  font-family: 'PT Sans', sans-serif;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  font-size: 1em; 
+  
+}
+
+.hero-block-text h3{
+  font-family: 'Merriweather', serif;
+  font-size: 1.25em;
+}
+ 
+.column-segment-container{
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em; 
+  justify-content: center;
+}
+
+.column-segment{
+  padding: 1em;
+  max-width: 30ch;
+  flex: 25%
+}
+
+.column-segment h3{
+  font-family: 'Merriweather', serif;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width:750px){
+
+  .column-segment{
+    flex: 50%;
+  }
+
+}
+
+.text-block-photo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.tbpl-text{
+  padding: 1em;
+  max-width: 30ch;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  margin: 0; 
+  
+}
+
+.tbpl-text h3{
+  font-family: 'Merriweather', serif;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:750px){
+
+  .text-block-photo-container{
+    flex-wrap: wrap;
+  }
+  .tbpl-text{
+    max-width: 32ch;
+    padding: 0;
+  }
+
+}
+
+.footer-container{
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.em;
+  background-color: black;
+  color: white;
+  justify-content: space-evenly;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container, a, ul{
+  list-style-type: none;
+  text-decoration: none;
+  padding:0;
+  color: white;
+}
+
+.footer-container h3{
+  font-family: 'Merriweather', serif;
+  color: yellow;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-segment {
+  padding: 0;
+  max-width: 30ch;
+  flex: 25%;
+  text-align: center;
+} 
+
+@media screen and (max-width:750px){
+  .footer-segment {
+    flex: 50%;
+  }
+}
+
+.contact-footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'PT Sans', sans-serif;
+  background-color: black;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+.modular-grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}
+
+@media screen and (max-width:750px){
+   .modular-grid{
+     margin-left: 0%;
+     margin-right: 0%;
+   }
+}
+  
+.title{
+  display: flex;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+  justify-content: center;
+}
+
+.text-block-flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5em;
+  justify-content: center;
+}
+
+/*font-family: 'Merriweather', serif;
+
+font-family: 'PT Sans', sans-serif;
+
+
+
+
+
